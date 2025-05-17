@@ -10,15 +10,18 @@
 ## Тест случаи според критериумот Every statement
 
 Со Every Statment методата целта е секоја линија од кодот да биде извршена барем еднаш преку некој тест случај. За оваа метода минимален број на тест случаи кои ни се потребни е 6.
-####List == null // allItems==null 
+#### List == null // allItems==null 
 Доколку листата е null тогаш ќе добиеме исклучок "allItems list can't be null!". Со овој тест случај е опфатен првиот if-услов од кодот.
-####InvalidName==null // item.getName()==null 
+#### InvalidName==null // item.getName()==null 
 Ако имаме предмет со невалидно име тогаш се добива исклучок RuntimeException("Invalid item!") и на овој начин е покриена линијата за проверка 	на име.
-####Discounted item (item.getDiscount>0)
+#### Discounted item (item.getDiscount>0)
 Ако за вредност на discount, има број поголем од 0 се влегува во if условот во кој се намалува sum независно од тоа дали другите услови во if-от се исполнети бидејќи станува збор за операција "ИЛИ".
-####Item without discount - Ако условот item.getDiscount>0 не е исполнет, т.е за discount се земе број <=0 , тогаш се влегува во else делот и се извршуваат соодветните наредби за пресметки од кодот.
-#####Invalid card Number - Со ваков тест случај за невалидно име на картичка ќе се добие RuntimeException("Invalid card number!") и ќе биде изминат else делот од соодветниот услов.
-#####Invalid character in card number - Во овој тест случај картичката има 16 	карактери, но барем еден е невалиден (на пример буква). Ова го активира for-loop каде што се проверува секој карактер дали е цифра. Ако не е, се фрла RuntimeException("Invalid character in card number!").
+#### Item without discount 
+Ако условот item.getDiscount>0 не е исполнет, т.е за discount се земе број <=0 , тогаш се влегува во else делот и се извршуваат соодветните наредби за пресметки од кодот.
+##### Invalid card Number
+Со ваков тест случај за невалидно име на картичка ќе се добие RuntimeException("Invalid card number!") и ќе биде изминат else делот од соодветниот услов.
+##### Invalid character in card number 
+Во овој тест случај картичката има 16 	карактери, но барем еден е невалиден (на пример буква). Ова го активира for-loop каде што се проверува секој карактер дали е цифра. Ако не е, се фрла RuntimeException("Invalid character in card number!").
 
 ## Тест случаи според критериумот Multiple Condition
 
